@@ -1,0 +1,23 @@
+.home-nav {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically on mobile */
+  gap: 15px; /* Space between the cards */
+}
+
+.nav-card {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer; /* To indicate they are clickable */
+  transition: background-color 0.3s;
+}
+
+.nav-card:hover {
+  background-color: #3c3c3c; /* Highlight on hover */
+}
+
+.nav-card h3 {
+  margin-top: 0;
+  color: #e6b85c;
+}
