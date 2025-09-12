@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import './HomeNav.css';
 
-// This is a "sub-component" defined in the same file for simplicity
 function NavCard({ title, description }) {
     return (
         <div className="nav-card">
@@ -13,9 +13,15 @@ function NavCard({ title, description }) {
 function HomeNav() {
   return (
     <nav className="home-nav">
-      <NavCard title="Odu Encyclopedia" description="Explore the 256 sacred signs of Ifá." />
-      <NavCard title="Request a Reading" description="Seek guidance through a personal consultation." />
-      <NavCard title="Personal Journal" description="Record your notes, readings, and reflections." />
+      <Link to="/encyclopedia" className="nav-link">
+        <NavCard title="Odu Encyclopedia" description="Explore the 256 sacred signs of Ifá." />
+      </Link>
+      <Link to="/reading" className="nav-link">
+        <NavCard title="Request a Reading" description="Seek guidance through a personal consultation." />
+      </Link>
+      <Link to="/journal" className="nav-link">
+        <NavCard title="Personal Journal" description="Record your notes, readings, and reflections." />
+      </Link>
     </nav>
   );
 }

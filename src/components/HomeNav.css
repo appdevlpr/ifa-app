@@ -21,3 +21,8 @@
   margin-top: 0;
   color: #e6b85c;
 }
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
