@@ -1,0 +1,41 @@
+.odu-list-item {
+  display: flex;
+  align-items: center;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.odu-binary {
+  font-family: monospace;
+  font-size: 1.2em;
+  color: #e6b85c;
+  margin-right: 20px;
+  white-space: pre; /* Preserves the spacing in the binary string */
+}
+
+.odu-info .odu-name {
+  margin: 0;
+  color: #f0f0f0;
+}
+
+.odu-info .odu-summary {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.odu-list-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Makes the link take up the full space */
+  transition: background-color 0.2s;
+}
+
+.odu-list-link:hover {
+  background-color: #3c3c3c;
+  border-radius: 8px;
+}
